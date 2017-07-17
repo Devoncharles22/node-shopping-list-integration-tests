@@ -32,7 +32,8 @@ describe('recipes', function ( ) {
 });
 it('should add a recipe on POST', function( ) {
 	const newRecipe = {
-		name: 'chocolate cake', ingredients: ['flour', 'chocolate', 'eggs', 'butter'];
+		name: 'chocolate cake', ingredients: ['flour', 'chocolate', 'eggs', 'butter']
+	};
 	return chai.request(app)
 		.post('/recipe');
 		.send(newRecipe);
