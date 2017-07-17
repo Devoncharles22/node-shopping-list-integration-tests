@@ -19,7 +19,7 @@ describe('recipes', function ( ) {
 		return chai.request(app)
 		.get('/recipes')
 		.then(function(res) {
-			res.should.have status(200);
+			res.should.have.status(200);
 			res.should.be.json;
 			res.body.should.be.a('array');
 			res.body.length.should.be.at.least(1);
